@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jmm-specification/jmm-specification.iml" filepath="$PROJECT_DIR$/jmm-specification/jmm-specification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-concurrent/thread-concurrent.iml" filepath="$PROJECT_DIR$/thread-concurrent/thread-concurrent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-syncronized/thread-syncronized.iml" filepath="$PROJECT_DIR$/thread-syncronized/thread-syncronized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tuling-juc-final.iml" filepath="$PROJECT_DIR$/tuling-juc-final.iml" />
+    </modules>
+  </component>
+</project>
