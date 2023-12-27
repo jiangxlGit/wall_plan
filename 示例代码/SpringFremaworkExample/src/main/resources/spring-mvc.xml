@@ -35,7 +35,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <!-- 拦截所有的请求，这个必须写在前面 -->
-            <mvc:mapping path="/**"/>
+            <mvc:mapping path="/login/**"/>
             <!-- 但是排除下面这些，也就是不拦截请求 -->
             <mvc:exclude-mapping path="/login.html"/>
             <bean class="com.jloved.example.UserLoginInterceptor"/>

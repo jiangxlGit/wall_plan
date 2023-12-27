@@ -12,7 +12,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
  * @description 利用spring框架提供的HandlerInterceptorAdapter，实现自定义拦截器
  */
 public class UserLoginInterceptor extends HandlerInterceptorAdapter {
-    // 在业务处理器处理请求之前被调用  
+    // 在业务处理器处理请求之前被调用
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("===== UserLoginInterceptor preHandle...");
         String requestUri = request.getRequestURI();
@@ -23,7 +23,7 @@ public class UserLoginInterceptor extends HandlerInterceptorAdapter {
         System.out.println("url" + url);
         String username = (String) request.getSession().getAttribute("username");
         if (null == username) {
-            // 跳转到登录页面  
+            // 跳转到登录页面
             request.getRequestDispatcher("/WEB-INF/login.html").forward(request, response);
             return false;
         } else {
@@ -31,7 +31,7 @@ public class UserLoginInterceptor extends HandlerInterceptorAdapter {
         }
     }
 
-    // 在业务处理器处理请求完成之后，生成视图之前执行  
+    // 在业务处理器处理请求完成之后，生成视图之前执行
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         System.out.println("===== UserLoginInterceptor postHandle...");
         if (modelAndView != null) {
@@ -40,7 +40,7 @@ public class UserLoginInterceptor extends HandlerInterceptorAdapter {
         }
     }
 
-    // 在DispatcherServlet完全处理完请求之后被调用，可用于清理资源  
+    // 在DispatcherServlet完全处理完请求之后被调用，可用于清理资源
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         System.out.println("===== UserLoginInterceptor afterCompletion...");
     }
