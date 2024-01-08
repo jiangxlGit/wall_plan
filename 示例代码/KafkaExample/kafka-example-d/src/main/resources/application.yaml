@@ -1,0 +1,32 @@
+server:
+  port: 8890
+kafka:
+  consumer:
+    topic-suffix: test
+    consumerTopicNameTest:
+      topic: jloved-kafka
+      groupId: jloved-kafka-demo-consumer
+      namespace: jlovedNs
+      consumerCount: 1
+      isMultiThread: true
+      threadCount: 5
+      maxPollRecords: 2
+  security:
+    security-properties:
+      jlovedNs:
+        enabled: false
+        username: jloved
+        password: E6hx0nUg8yEVdjnC
+  bootstrap:
+    enable: true
+    default-namespace: jlovedNs
+    source-properties:
+      jlovedNs:
+        servers: 106.14.17.131:9092,43.139.242.81:9092
+        instance: ckafka-jloved
+        enabled: true
+
+logging:
+  level:
+    root: info
+    org.apache.kafka.clients.consumer.internals: OFF
