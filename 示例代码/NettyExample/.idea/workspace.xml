@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6e0328d-7d7f-4020-99a4-f136ce2f2f7a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringmvcRewriteExample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringmvcRewriteExample/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringmvcRewriteExample/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringmvcRewriteExample/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringmvcRewriteExample/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringmvcRewriteExample/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringmvcRewriteExample/src/main/webapp/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringmvcRewriteExample/web/success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TomcatExample" beforeDir="false" afterPath="$PROJECT_DIR$/../TomcatExample" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
